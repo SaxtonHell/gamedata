@@ -1,0 +1,46 @@
+"Games"
+{
+	/* Team Fortress 2 */
+	"tf"
+	{
+		"Offsets"
+		{
+			// our shit
+			"EquipWearable"
+			{
+				"windows"	"438"
+				"linux"		"439"
+			}
+			"PlayScene"
+			{
+				"windows"	"232"
+				"linux"		"233"
+			}
+		}
+		"Signatures"
+		{
+			// our shit
+			"BroadcastVoiceData"
+			{
+				"library"	"engine"
+				"windows"	"\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x83\xEC\x50"
+				
+				// good luck for anything else
+			}
+			"CTFPlayer::PlayTauntSceneFromItem"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x0C\x01\x00\x00\x53\x8B\x5D\x08\x57\x8B"
+				"linux"		"@_ZN9CTFPlayer22PlayTauntSceneFromItemEPK13CEconItemView"
+				"mac"		"@_ZN9CTFPlayer22PlayTauntSceneFromItemEPK13CEconItemView"
+			}
+
+			// accelerator
+			"GetSpew"
+			{
+				"library" "engine"
+				"windows" "\x55\x8B\xEC\x83\xEC\x20\x8D\x45\xE0\x57"
+			}
+		}
+	}
+}
